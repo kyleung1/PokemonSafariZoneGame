@@ -1,0 +1,151 @@
+/*
+Name: Kyle Leung
+Date:11/4/2022
+Section: CSE 154 AB Donovan Kong
+
+This is the styles.css page for my Creative Project 3 pokemon safari zone game.
+It provides a consistent style for my index.html page containing a menu and a
+game window, along with classes that are later added from the index.js page. It
+also meticulously positions sprites of the game. */
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header p {
+  text-align: center;
+}
+
+input {
+  width: 80px;
+}
+
+footer {
+  position: relative;
+  top: 130px;
+}
+
+#menu article {
+  color: black;
+  background-color: beige;
+  border-radius: 15px;
+  border: 5px solid darkslategray;
+  box-shadow: 5px 5px darkblue;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#menu article:hover {
+  cursor: pointer;
+}
+
+#game {
+  height: 500px;
+}
+
+#scene {
+  height: 100%;
+  z-index: -10;
+}
+
+#trainer {
+  position: relative;
+  bottom: 331px;
+  left: 70px;
+}
+
+#trainer img {
+  height: 200px;
+}
+
+#pokemon {
+  height: 280px;
+}
+
+#pokemon img {
+  height: 280px;
+  position: relative;
+  bottom: 750px;
+  left: 510px;
+}
+
+#options {
+  border: 10px solid goldenrod;
+  width: 97.3%;
+  height: 20%;
+  color: white;
+  background-color: navy;
+  text-shadow: 2px 2px #551755;
+  display: flex;
+  justify-content: right;
+  font-weight: bold;
+}
+
+#options section {
+  padding: 20px;
+  margin-left: 500px;
+  border: 5px solid orangered;
+  background-color: beige;
+  color: black;
+  text-shadow: 2px 2px beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#options section article {
+  padding: 5px;
+}
+
+#options section article:hover {
+  cursor: pointer;
+}
+
+#poke-name {
+  position: relative;
+  bottom: 1000px;
+  left: 70px;
+  color: black;
+  background-color: beige;
+  border-radius: 15px;
+  border: 5px solid darkslategray;
+  box-shadow: 5px 5px darkblue;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#name-label {
+  text-transform: uppercase;
+}
+
+#balls {
+  position: relative;
+  bottom: 790px;
+  left: 570px;
+  color: black;
+  background-color: beige;
+  border: 5px solid darkslategray;
+  box-shadow: 5px 5px darkblue;
+  border-radius: 15px;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#pokemon .shaking {
+  height: 40px;
+  position: relative;
+  bottom: 550px;
+  left: 620px;
+}

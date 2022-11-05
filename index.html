@@ -1,0 +1,60 @@
+<!--
+  Name: Kyle Leung
+  Date: 11/4/2022
+  Section: CSE 154 AB Donovan Kong
+
+  This is the index.html page for my Creative Project 3 pokemon safari zone game.
+  It has HTML that contains the structure for the menu and game windows of the game.
+  There are inputs and clickable articles, which are for inputting the amount of
+  pokeballs and are clickable options for what action to perform in the game. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <title>Pokemon Safari Zone</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pokemon Safari Zone</h1>
+      <p>Note: click run to return to menu.</p>
+    </header>
+    <section id="menu">
+      <article id="start-btn">Start</article>
+      <article id="more-balls">Pokeball Stock</article>
+      <section id="more-balls2" class="hidden">
+        <label for="ball-form">Amount</label>
+        <input type="number" id="ball-form" placeholder="stock" />
+      </section>
+    </section>
+    <section id="game" class="hidden">
+      <img id="scene" src="img/battle.png" alt="empty-battle" />
+      <!-- Pokemon battle template. Imgflip. (n.d.). Retrieved November 4, 2022,
+      from https://imgflip.com/memetemplate/392364694/Pokemon-Battle  -->
+      <article id="options">
+        <p>What will Trainer throw?</p>
+        <section>
+          <article id="ball-btn">BALL</article>
+          <article id="run-btn">RUN</article>
+        </section>
+      </article>
+      <article id="trainer">
+        <img src="img/red.webp" alt="red" />
+        <!-- File:E Red Back.png. Bulbagarden Archives. (n.d.). Retrieved November
+        4, 2022, from https://archives.bulbagarden.net/wiki/Main_Page  -->
+      </article>
+      <article id="pokemon">
+        <section id="pokemon-inside"></section>
+      </article>
+      <article id="poke-name">
+        <p id="name-label">pokemon name</p>
+      </article>
+      <article id="balls">
+        <p><span id="ball-amt"></span> balls left</p>
+      </article>
+    </section>
+    <footer>Project made using: https://pokeapi.co/</footer>
+  </body>
+</html>
